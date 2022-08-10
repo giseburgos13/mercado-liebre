@@ -118,6 +118,17 @@
             </a>
             <button type="reset" class="boton-formulario">Borrar Formulario</button>
         </form>
+        <script>
+            const formulario = document.getElementById('Registro-Usuario');
+            formulario.addEventListener('submit', (e) => {
+                if (formulario.nombreyapellido.value.length < 2) {
+                    alert('No se ingreso un nombre valido');
+                    e.preventDefault();
+                } else {
+                    alert('El formulario esta siendo enviado');
+                }
+            });
+        </script>
         </main>
     <footer>
         <div class="footer-textos">
