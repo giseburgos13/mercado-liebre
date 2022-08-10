@@ -122,15 +122,15 @@ main img {
     max-width: 70%;
 }
 
-#description {
+.individual-product #description {
     font-size: 16px;
     padding: 5px;
     color: #666;
     display: none;
-    transition: .9s ease;
 }
-main article:hover #description{
+.individual-product:hover #description{
     display: block;
+    /* transition: 1500ms; */
 }
 
 .producto {
